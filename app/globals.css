@@ -2,10 +2,9 @@
 
 
 @theme {
-    --color-primary: rgba(14,56,76,1);
-    --color-secondary: rgba(4, 109, 221, 1);
-    --text-primary: rgba(14,56,76,1);
     --font-inter: inter, sans-serif;
+    --font-poppins: poppins, sans-serif;
+    --font-roboto: roboto, sans-serif;
 }
 
 body{
