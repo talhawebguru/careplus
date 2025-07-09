@@ -1,4 +1,5 @@
 import Hero from "./components/home/Hero";
+import KeyStrength from "./components/home/KeyStrength";
 import Manufacturing from "./components/home/Manufacturing";
 import OurClients from "./components/home/OurClients";
 import OurHistory from "./components/home/OurHistory";
@@ -17,6 +18,8 @@ export default function Home() {
         <ProductCategories />
         <OurClients />
         <Manufacturing />
+        <KeyStrength />
+        
       </main>
     </>
   );
