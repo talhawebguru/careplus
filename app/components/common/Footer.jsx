@@ -42,7 +42,7 @@ const iconVariants = {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[rgba(243,243,243,1)] mt-20 relative overflow-hidden">
+      <footer className="bg-[rgba(243,243,243,1)] relative overflow-hidden">
         <Image
           src={Vector1}
           alt="Vector1"

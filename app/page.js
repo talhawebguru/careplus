@@ -1,3 +1,4 @@
+import EndSection from "./components/home/EndSection";
 import Hero from "./components/home/Hero";
 import KeyStrength from "./components/home/KeyStrength";
 import Manufacturing from "./components/home/Manufacturing";
@@ -5,6 +6,7 @@ import OurClients from "./components/home/OurClients";
 import OurHistory from "./components/home/OurHistory";
 import OurMission from "./components/home/OurMission";
 import ProductCategories from "./components/home/ProductCategories";
+import Quality from "./components/home/Quality";
 import WhoWeAre from "./components/home/WhoWeAre";
 
 export default function Home() {
@@ -19,7 +21,8 @@ export default function Home() {
         <OurClients />
         <Manufacturing />
         <KeyStrength />
-        
+        <Quality/>
+        <EndSection />
       </main>
     </>
   );
