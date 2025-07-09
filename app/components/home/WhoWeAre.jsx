@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import Container from "../common/Container";
 import Image from "next/image";
-import { motion } from "motion/react";
+import * as motion from "motion/react-client"
 
 const WhoWeAre = () => {
   return (
@@ -12,7 +11,8 @@ const WhoWeAre = () => {
             {/* Left: Image */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="flex-shrink-0 w-full max-w-[527px] h-[400px] lg:h-[622px] mb-8 lg:mb-0 lg:mr-10 rounded-lg overflow-hidden shadow-xl"
             >
@@ -27,7 +27,8 @@ const WhoWeAre = () => {
             {/* Right: Content */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="flex-1 flex flex-col justify-center items-start max-w-xl"
             >
@@ -38,9 +39,14 @@ const WhoWeAre = () => {
                 <span className="text-white text-xl font-medium font-['Poppins']">Safecare Medical Industries</span>
                 <span className="text-white text-xl font-normal font-['Poppins']"> was conceived and established in the year of 2016 that plans to give a different dimension to the medical industries all across the Middle East</span>
               </div>
-              <button className="px-[26px] py-[11px] rounded outline-[1.5px] outline-offset-[-1.5px] outline-white inline-flex justify-center items-center gap-2.5 hover:bg-white/10 transition">
+              <motion.button
+                whileHover={{ scale: 1.07, backgroundColor: 'rgba(255,255,255,0.08)' }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="px-[26px] py-[11px] rounded outline-[1.5px] outline-offset-[-1.5px] outline-white inline-flex justify-center items-center gap-2.5 hover:bg-white/10 transition"
+              >
                 <span className="text-white text-base font-medium font-['Poppins']">Contact Us</span>
-              </button>
+              </motion.button>
             </motion.div>
           </div>
         </Container>
