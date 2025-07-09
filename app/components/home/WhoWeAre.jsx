@@ -43,7 +43,7 @@ const WhoWeAre = () => {
                 whileHover={{ scale: 1.07, backgroundColor: 'rgba(255,255,255,0.08)' }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="px-[26px] py-[11px] rounded outline-[1.5px] outline-offset-[-1.5px] outline-white inline-flex justify-center items-center gap-2.5 hover:bg-white/10 transition"
+                className="px-[26px] py-[11px] cursor-pointer rounded outline-[1.5px] outline-offset-[-1.5px] outline-white inline-flex justify-center items-center gap-2.5 hover:bg-white/10 transition"
               >
                 <span className="text-white text-base font-medium font-['Poppins']">Contact Us</span>
               </motion.button>
