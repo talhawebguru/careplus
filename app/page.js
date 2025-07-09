@@ -1,4 +1,5 @@
 import Hero from "./components/home/Hero";
+import Manufacturing from "./components/home/Manufacturing";
 import OurClients from "./components/home/OurClients";
 import OurHistory from "./components/home/OurHistory";
 import OurMission from "./components/home/OurMission";
@@ -15,6 +16,7 @@ export default function Home() {
         <OurHistory />
         <ProductCategories />
         <OurClients />
+        <Manufacturing />
       </main>
     </>
   );
