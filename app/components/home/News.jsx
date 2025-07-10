@@ -39,16 +39,19 @@ const News = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="bg-white rounded shadow-lg overflow-hidden flex flex-col h-full"
+            className="bg-white p-4 md:p-8 rounded shadow-lg overflow-hidden flex flex-col h-full"
           >
-            <Image
-              src={news[0].img}
-              alt={news[0].alt}
-              width={596}
-              height={433}
-              className="w-full h-[320px] object-cover"
-            />
-            <div className="p-8 flex flex-col flex-1">
+            <div className="relative w-full aspect-[3/2] md:aspect-[596/320]">
+              <Image
+                src={news[0].img}
+                alt={news[0].alt}
+                fill
+                className="object-cover w-full h-full"
+                sizes="(max-width: 768px) 100vw, 596px"
+                priority={true}
+              />
+            </div>
+            <div className=" mt-8 flex flex-col flex-1">
               <h3 className="text-[#323232] text-[28px] font-medium font-['Poppins'] mb-2">{news[0].title}</h3>
               <p className="text-[#323232] text-xl font-normal font-['Poppins'] mb-6">{news[0].desc}</p>
               <a href={news[0].link} className="text-[#0c0c0c] text-base font-medium font-['Poppins'] leading-normal flex items-center gap-2 group">
@@ -68,16 +71,18 @@ const News = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.7, delay: 0.15 * (idx + 1), ease: 'easeOut' }}
-                className="bg-white rounded shadow-lg overflow-hidden flex flex-row h-full"
+                className="bg-white p-4 md:p-8 rounded shadow-lg overflow-hidden flex flex-col md:flex-row h-full"
               >
-                <Image
-                  src={item.img}
-                  alt={item.alt}
-                  width={268}
-                  height={333}
-                  className="w-[160px] h-[160px] object-cover m-6 rounded"
-                />
-                <div className="p-6 flex flex-col flex-1 justify-center">
+                <div className="relative w-full aspect-[3/2] mb-6 md:mb-0 md:w-[160px] md:min-w-[160px] md:aspect-[1/1] flex-shrink-0">
+                  <Image
+                    src={item.img}
+                    alt={item.alt}
+                    fill
+                    className="object-cover w-full h-full rounded"
+                    sizes="(max-width: 768px) 100vw, 160px"
+                  />
+                </div>
+                <div className="flex flex-col flex-1 justify-center md:ml-8">
                   <h3 className="text-[#323232] text-[28px] font-medium font-['Poppins'] mb-2">{item.title}</h3>
                   <p className="text-[#323232] text-xl font-normal font-['Poppins'] mb-4">{item.desc}</p>
                   <a href={item.link} className="text-[#0c0c0c] text-base font-medium font-['Poppins'] leading-normal flex items-center gap-2 group">
