@@ -79,29 +79,29 @@ const MainNav = () => {
           </div>
           {/* Desktop Nav */}
           <nav className="!hidden lg:!block">
-            <ul className="flex items-center gap-8 text-[#323232] text-base font-normal font-inter">
+            <ul className="flex items-center gap-8 text-[#323232] text-base font-medium font-inter">
               <li>
-                <Link href="/" className={`hover:text-[#02c8b0] cursor-pointer ${pathname === "/" ? "text-[#02c8b0]" : ""}`}>
+                <Link href="/" className={`hover:text-primary cursor-pointer ${pathname === "/" ? "text-primary" : ""}`}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className={`hover:text-[#02c8b0] cursor-pointer ${pathname === "/about" ? "text-[#02c8b0]" : ""}`}>
+                <Link href="/about" className={`hover:text-primary cursor-pointer ${pathname === "/about" ? "text-primary" : ""}`}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/products" className={`hover:text-[#02c8b0] cursor-pointer ${pathname === "/products" ? "text-[#02c8b0]" : ""}`}>
+                <Link href="/products" className={`hover:text-primary cursor-pointer ${pathname === "/products" ? "text-primary" : ""}`}>
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className={`hover:text-[#02c8b0] cursor-pointer ${pathname === "/gallery" ? "text-[#02c8b0]" : ""}`}>
+                <Link href="/gallery" className={`hover:text-primary cursor-pointer ${pathname === "/gallery" ? "text-primary" : ""}`}>
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className={`hover:text-[#02c8b0] cursor-pointer ${pathname === "/careers" ? "text-[#02c8b0]" : ""}`}>
+                <Link href="/careers" className={`hover:text-primary cursor-pointer ${pathname === "/careers" ? "text-primary" : ""}`}>
                   Careers
                 </Link>
               </li>
@@ -109,7 +109,7 @@ const MainNav = () => {
           </nav>
           {/* Shop Now Button */}
           <div className="flex items-center gap-6">
-            <button className="px-[26px] py-2.5 bg-gradient-to-b from-[#0898a3] to-[#00d3b3] flex justify-center items-center cursor-pointer rounded-[5px]">
+            <button className="px-[26px] py-2.5 bg-primary flex justify-center items-center cursor-pointer rounded-[5px]">
               <span className="text-white text-base font-medium font-inter">
                 Shop Now
               </span>
@@ -164,34 +164,34 @@ const MainNav = () => {
             >
               <ul className="flex flex-col gap-4 text-[#323232] text-base font-normal font-inter">
                 <motion.li variants={mobileLinkVariants} className="py-2 border-b border-gray-200">
-                  <Link href="/" className={`hover:text-[#02c8b0] cursor-pointer block ${pathname === "/" ? "text-[#02c8b0]" : ""}`} onClick={toggleMobileMenu}>
+                  <Link href="/" className={`hover:text-primary cursor-pointer block ${pathname === "/" ? "text-primary" : ""}`} onClick={toggleMobileMenu}>
                     Home
                   </Link>
                 </motion.li>
                 <motion.li variants={mobileLinkVariants} className="py-2 border-b border-gray-200">
-                  <Link href="/about" className={`hover:text-[#02c8b0] cursor-pointer block ${pathname === "/about" ? "text-[#02c8b0]" : ""}`} onClick={toggleMobileMenu}>
+                  <Link href="/about" className={`hover:text-primary cursor-pointer block ${pathname === "/about" ? "text-primary" : ""}`} onClick={toggleMobileMenu}>
                     About Us
                   </Link>
                 </motion.li>
                 <motion.li variants={mobileLinkVariants} className="py-2 border-b border-gray-200">
-                  <Link href="/products" className={`hover:text-[#02c8b0] cursor-pointer block ${pathname === "/products" ? "text-[#02c8b0]" : ""}`} onClick={toggleMobileMenu}>
+                  <Link href="/products" className={`hover:text-primary cursor-pointer block ${pathname === "/products" ? "text-primary" : ""}`} onClick={toggleMobileMenu}>
                     Products
                   </Link>
                 </motion.li>
                 <motion.li variants={mobileLinkVariants} className="py-2 border-b border-gray-200">
-                  <Link href="/gallery" className={`hover:text-[#02c8b0] cursor-pointer block ${pathname === "/gallery" ? "text-[#02c8b0]" : ""}`} onClick={toggleMobileMenu}>
+                  <Link href="/gallery" className={`hover:text-primary cursor-pointer block ${pathname === "/gallery" ? "text-primary" : ""}`} onClick={toggleMobileMenu}>
                     Gallery
                   </Link>
                 </motion.li>
                 <motion.li variants={mobileLinkVariants} className="py-2">
-                  <Link href="/careers" className={`hover:text-[#02c8b0] cursor-pointer block ${pathname === "/careers" ? "text-[#02c8b0]" : ""}`} onClick={toggleMobileMenu}>
+                  <Link href="/careers" className={`hover:text-primary cursor-pointer block ${pathname === "/careers" ? "text-primary" : ""}`} onClick={toggleMobileMenu}>
                     Careers
                   </Link>
                 </motion.li>
               </ul>
               {/* Shop Now Button */}
               <div className="flex items-center gap-6">
-                <button className="px-[26px] py-2.5 w-full mt-5 bg-gradient-to-b from-[#0898a3] to-[#00d3b3] flex justify-center items-center cursor-pointer rounded-[5px]">
+                <button className="px-[26px] py-2.5 w-full mt-5 bg-primary flex justify-center items-center cursor-pointer rounded-[5px]">
                   <span className="text-white text-base font-medium font-inter">
                     Shop
                   </span>
