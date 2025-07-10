@@ -2,6 +2,7 @@ import EndSection from "./components/home/EndSection";
 import Hero from "./components/home/Hero";
 import KeyStrength from "./components/home/KeyStrength";
 import Manufacturing from "./components/home/Manufacturing";
+import News from "./components/home/News";
 import OurClients from "./components/home/OurClients";
 import OurHistory from "./components/home/OurHistory";
 import OurMission from "./components/home/OurMission";
@@ -21,6 +22,7 @@ export default function Home() {
         <OurClients />
         <Manufacturing />
         <KeyStrength />
+        <News />
         <Quality/>
         <EndSection />
       </main>
