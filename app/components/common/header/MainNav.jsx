@@ -69,9 +69,9 @@ const MainNav = () => {
               <Image
                 src={Logo}
                 alt="logo"
-                width={157}
-                height={51}
-                className="h-10 w-36 sm:w-44 object-contain"
+                width={175}
+                height={60}
+                className="h-16 w-40 sm:w-44 object-contain"
                 priority
                 quality={100}
               />
