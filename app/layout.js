@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${poppins.variable} ${roboto.variable} antialiased scroll-smooth`}
+        className={`${inter.variable} ${poppins.variable} ${roboto.variable} bg-[#f4f4f4] antialiased scroll-smooth`}
       >
         <Header/>
         {children}
