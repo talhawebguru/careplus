@@ -42,18 +42,8 @@ const iconVariants = {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[rgba(243,243,243,1)] relative overflow-hidden">
-        <Image
-          src={Vector1}
-          alt="Vector1"
-          className="absolute -top-40 -left-36 z-20"
-        />
-        <Image
-          src={Vector2}
-          alt="Vector2"
-          className="absolute -bottom-10 right-62 z-20"
-        />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 relative z-30">
+      <footer className="bg-white overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 ">
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-16"
             initial="hidden"
@@ -63,7 +53,7 @@ const Footer = () => {
           >
             {/* Logo & Contact */}
             <motion.div variants={fadeUp} custom={1}>
-              <div className="flex flex-col items-start justify-start space-y-4 relative">
+              <div className="flex flex-col items-start justify-start space-y-4 ">
                 <motion.div variants={fadeUp} custom={1.1}>
                   <Image
                     src={FooterLogo}
@@ -171,7 +161,7 @@ const Footer = () => {
                   {[<FaFacebookF className="text-[#333333]" size={20} />, <BsTwitterX className="text-[#333333]" size={20} />, <IoLogoInstagram className="text-[#333333]" size={20} />, <FaLinkedin className="text-[#333333]" size={20} />].map((Icon, idx) => (
                     <motion.div
                       key={idx}
-                      className="w-12 p-3 bg-white flex items-center justify-center rounded transition"
+                      className="w-12 p-3 !bg-[#f4f4f4] flex items-center justify-center rounded transition"
                       variants={iconVariants}
                       initial="rest"
                       whileHover="hover"
@@ -186,7 +176,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          className="h-16 bg-neutral-50 border-t border-[#e6e6e6] relative z-30 flex items-center justify-between"
+          className="h-16 !bg-[#f4f4f4] border-t border-[#e6e6e6] relative z-30 flex items-center justify-between"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}

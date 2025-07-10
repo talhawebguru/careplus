@@ -58,7 +58,7 @@ const WhoWeAre = () => {
                 <span className="text-primary text-xl font-normal font-['Poppins']"> was conceived and established in the year of 2016 that plans to give a different dimension to the medical industries all across the Middle East</span>
               </motion.div>
               <motion.button
-                whileHover={{ scale: 1.07, backgroundColor: 'rgba(255,255,255,0.08)' }}
+                whileHover={{ scale: 1.07}}
                 whileTap={{ scale: 0.97 }}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
