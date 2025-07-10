@@ -20,19 +20,19 @@ const TopNav = () => {
 
   return (
     <motion.section
-      className="bg-gradient-to-b from-[#0898a3] to-[#00d3b3] h-12 items-center justify-center !hidden md:!flex"
+      className="bg-primary h-12 items-center justify-center !hidden md:!flex"
       initial="hidden"
       animate="visible"
       variants={topNavVariants}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 flex items-center justify-between h-full">
         {/* Left Section */}
-        <div className="flex items-center h-full border-x-2 border-white/20 divide-x-2 divide-white/20">
+        <div className="flex items-center h-full border-x-2 border-white/20 divide-x-2 divide-white/20 font-inter">
           <div className="flex items-center space-x-2 px-4 h-full">
             <LuPhone className="text-white" />
             <a
               href="tel:+971-2-5067321"
-              className="text-white text-base font-normal font-['Inter'] leading-normal"
+              className="text-white text-base font-normal leading-normal"
             >
               (239) 555-0108
             </a>
@@ -41,15 +41,15 @@ const TopNav = () => {
             <CiMail className="text-white" />
             <a
               href="mailto:info@safecareind.xyz"
-              className="text-white text-base font-normal font-['Inter'] leading-normal"
+              className="text-white text-base font-normal leading-normal"
             >
               info@safecareind.xyz
             </a>
           </div>
         </div>
         {/* Right Section */}
-        <div className="flex items-center space-x-6 h-full">
-          <div className="flex h-full border-x-2 border-white/20 divide-x-2 divide-white/20 bg-white/10">
+        <div className="flex items-center space-x-6 h-full ">
+          <div className="flex h-full border-x-2 border-white/20 divide-x-2 divide-white/20">
             <a
               href="https://www.facebook.com/Jurhycommerce"
               target="_blank"

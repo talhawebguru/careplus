@@ -2,6 +2,9 @@
 
 
 @theme {
+
+    --color-primary: #1e3d69;
+    --color-secondary: rgba(169,214,235,1);
     --font-inter: inter, sans-serif;
     --font-poppins: poppins, sans-serif;
     --font-roboto: roboto, sans-serif;
