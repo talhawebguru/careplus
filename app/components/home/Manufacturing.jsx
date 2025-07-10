@@ -5,7 +5,7 @@ import * as motion from 'motion/react-client'
 
 const Manufacturing = () => {
   return (
-    <section className='bg-[#f8f8f8] py-16 lg:py-24'>
+    <section className='bg-[#f8f8f8] py-16 lg:py-24 overflow-hidden'>
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
           {/* Left: Image with play button */}

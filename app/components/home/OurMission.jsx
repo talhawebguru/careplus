@@ -7,7 +7,7 @@ import ourMissionVector from "@/public/images/ourMissionVector.png";
 
 const OurMission = () => {
   return (
-    <section className="relative">
+    <section className="overflow-hidden relative">
       <Container>
         <div className="bg-[#f8f8f8] flex flex-col lg:flex-row items-center justify-between min-h-[623px] pt-10 px-3 md:px-14 relative z-20 overflow-hidden">
           {/* Left: Mission Card */}

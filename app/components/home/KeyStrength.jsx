@@ -44,7 +44,7 @@ const strengths = [
 
 const KeyStrength = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="overflow-hidden py-16 lg:py-24">
       <Container>
         <h2 className="text-[#1e1e1e] text-[44px] font-normal font-['Roboto'] text-center mb-14">Our Key Strengths</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">

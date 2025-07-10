@@ -29,7 +29,7 @@ const news = [
 
 const News = () => {
   return (
-    <section className='bg-[url("/images/newsBgimage.png")] bg-cover bg-center bg-no-repeat py-16 lg:py-24'>
+    <section className="overflow-hidden bg-[url('/images/newsBgimage.png')] bg-cover bg-center bg-no-repeat py-16 lg:py-24">
       <Container>
         <h2 className="text-white text-[44px] font-normal font-['Roboto'] mb-12">News & Events</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">

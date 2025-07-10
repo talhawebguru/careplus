@@ -5,7 +5,7 @@ import EndSectionImg from "@/public/images/endSection.png"
 const EndSection = () => {
   return (
     <>
-    <section className='h-32'>
+    <section className='h-32 overflow-hidden'>
         <Image
         src={EndSectionImg}
         alt={"End Section"}

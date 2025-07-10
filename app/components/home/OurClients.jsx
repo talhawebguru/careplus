@@ -38,7 +38,7 @@ const clients = [
 
 const OurClients = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section className="overflow-hidden py-16 lg:py-24">
       <Container>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

@@ -20,7 +20,7 @@ const certifications = [
 
 const Quality = () => {
   return (
-    <section className="bg-[url('/images/quality-bg.png')] bg-cover bg-center bg-no-repeat py-16 lg:py-24">
+    <section className="overflow-hidden bg-[url('/images/quality-bg.png')] bg-cover bg-center bg-no-repeat py-16 lg:py-24">
       <Container>
         <div className="text-center mb-8">
           <h2 className="text-[#1e1e1e] text-[44px] font-normal font-['Roboto'] mb-2">Quality & Certifications</h2>

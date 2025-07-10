@@ -5,7 +5,7 @@ import * as motion from "motion/react-client"
 
 const WhoWeAre = () => {
   return (
-    <section className="py-0 -mt-20">
+    <section className="overflow-hidden py-0 -mt-20">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 40 }}

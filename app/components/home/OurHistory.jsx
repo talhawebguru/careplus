@@ -4,7 +4,7 @@ import * as motion from 'motion/react-client'
 
 const OurHistory = () => {
   return (
-    <section className='bg-[url("/images/ourHistory.png")] bg-cover lg:bg-center bg-no-repeat h-auto lg:h-[663px] flex items-center min-h-[400px]'>
+    <section className='bg-[url("/images/ourHistory.png")] bg-cover lg:bg-center bg-no-repeat h-auto lg:h-[663px] flex items-center min-h-[400px] overflow-hidden'>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

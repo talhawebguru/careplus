@@ -4,7 +4,7 @@ import * as motion from "motion/react-client"
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/images/heroBg.png')] bg-cover bg-center bg-no-repeat h-auto lg:h-[663px] flex items-center min-h-[400px]">
+    <section className="overflow-hidden bg-[url('/images/heroBg.png')] bg-cover bg-center bg-no-repeat h-auto lg:h-[663px] flex items-center min-h-[400px]">
       <Container>
         <div className="flex items-center min-h-[663px]">
           <motion.div
