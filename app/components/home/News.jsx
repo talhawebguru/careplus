@@ -29,9 +29,9 @@ const news = [
 
 const News = () => {
   return (
-    <section className="overflow-hidden bg-[url('/images/newsBgimage.png')] bg-cover bg-center bg-no-repeat py-16 lg:py-24">
+    <section className="overflow-hidden bg-[#fefefe] bg-cover bg-center bg-no-repeat py-16 lg:py-24">
       <Container>
-        <h2 className="text-white text-[44px] font-normal font-['Roboto'] mb-12">News & Events</h2>
+        <h2 className="text-[#1e3d69] text-[44px] font-normal font-['Roboto'] mb-12">News & Events</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           {/* Main card */}
           <motion.div
@@ -48,11 +48,10 @@ const News = () => {
                 fill
                 className="object-cover w-full h-full"
                 sizes="(max-width: 768px) 100vw, 596px"
-                priority={true}
               />
             </div>
             <div className=" mt-8 flex flex-col flex-1">
-              <h3 className="text-[#323232] text-[28px] font-medium font-['Poppins'] mb-2">{news[0].title}</h3>
+              <h3 className="text-[#323232] text-[28px] font-bold font-['Poppins'] mb-2">{news[0].title}</h3>
               <p className="text-[#323232] text-xl font-normal font-['Poppins'] mb-6">{news[0].desc}</p>
               <a href={news[0].link} className="text-[#0c0c0c] text-base font-medium font-['Poppins'] leading-normal flex items-center gap-2 group">
                 Read More
@@ -83,7 +82,7 @@ const News = () => {
                   />
                 </div>
                 <div className="flex flex-col flex-1 justify-center md:ml-8">
-                  <h3 className="text-[#323232] text-[28px] font-medium font-['Poppins'] mb-2">{item.title}</h3>
+                  <h3 className="text-[#323232] text-[28px] font-bold font-['Poppins'] mb-2">{item.title}</h3>
                   <p className="text-[#323232] text-xl font-normal font-['Poppins'] mb-4">{item.desc}</p>
                   <a href={item.link} className="text-[#0c0c0c] text-base font-medium font-['Poppins'] leading-normal flex items-center gap-2 group">
                     Read More

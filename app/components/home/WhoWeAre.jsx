@@ -5,14 +5,14 @@ import * as motion from "motion/react-client"
 
 const WhoWeAre = () => {
   return (
-    <section className="overflow-hidden py-0 -mt-20">
+    <section className="overflow-hidden py-0 -mt-20 ">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex flex-col lg:flex-row items-center justify-between bg-white min-h-[623px] py-10 lg:py-10 px-3 md:px-14"
+            className="flex flex-col lg:flex-row items-center justify-between lg:mx-5 xl:mx-10 bg-white min-h-[623px] py-10 lg:py-10 px-3 md:px-14"
           >
             {/* Left: Image */}
             <motion.div
@@ -64,7 +64,7 @@ const WhoWeAre = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ type: 'spring', stiffness: 300, delay: 0.4 }}
-                className="px-[26px] py-[11px] cursor-pointer rounded outline-[1.5px] bg-primary outline-offset-[-1.5px] outline-primary inline-flex justify-center items-center gap-2.5 hover:bg-white/10 transition"
+                className="px-[26px] py-[11px] cursor-pointer rounded outline-[1.5px] bg-primary outline-offset-[-1.5px] outline-primary inline-flex justify-center items-center gap-2.5 transition"
               >
                 <span className="text-white  text-base font-medium font-['Poppins']">Contact Us</span>
               </motion.button>
