@@ -59,17 +59,20 @@ const ProductCategories = () => {
                 type: "spring",
                 stiffness: 80,
               }}
-              className="relative group overflow-hidden shadow-md h-[338px] flex flex-col justify-end"
+              className="relative group overflow-hidden shadow-md h-[338px] flex flex-col justify-end cursor-pointer"
               whileHover={{
-                scale: 1.03,
                 boxShadow: "0 8px 32px 0 rgba(2,200,176,0.15)",
               }}
             >
-              <Image
+              <motion.img
                 src={cat.img}
                 alt={cat.alt}
                 width={304}
                 height={338}
+                 whileHover={{
+                scale: 1.03,
+                boxShadow: "0 8px 32px 0 rgba(2,200,176,0.15)",
+              }}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <motion.div
