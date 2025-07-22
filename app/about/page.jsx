@@ -4,6 +4,7 @@ import NewsLetter from '../components/home/NewsLetter'
 import { About } from '../components/about/About'
 import WhoWeAre from '../components/about/WhoWeAre'
 import OurMissionOurVision from '../components/about/OurMissionOurVision'
+import KeyStrength from '../components/about/KeyStrength'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
     <About/>
     <WhoWeAre/>
     <OurMissionOurVision/>
+    <KeyStrength/>
     <Quality/>
     <NewsLetter/>
     </>
